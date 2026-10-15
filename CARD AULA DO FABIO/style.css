@@ -1,0 +1,152 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fundo e centralização da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Cartão do desenvolvedor */
+.cartao {
+    background-color: #1e293b;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 16px;
+    border: 2px solid #334155;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse no cartão */
+.cartao:hover {
+    transform: translateY(-8px);
+    border-color: #38bdf8;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Conteúdo principal */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    width: 100%;
+}
+
+section h2 {
+    color: #38bdf8;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+section p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Foto de perfil */
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #38bdf8;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer h2 {
+    color: #38bdf8;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Links das redes sociais */
+footer a {
+    display: inline-block;
+    color: #e2e8f0;
+    text-decoration: none;
+    background-color: #ff0000;
+    padding: 8px 12px;
+    margin: 4px;
+    border-radius: 8px;
+
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse nos links */
+footer a:hover {
+    background-color: #020202;
+}
+
+/* LinkedIn azul */
+footer a.linkedin {
+    background-color: #0078f0;
+}
+
+/* Efeito ao passar o mouse no LinkedIn */
+footer a.linkedin:hover {
+    background-color: #020202;
+}
+
+/* Dev.to preto */
+footer a.devto {
+    background-color: #020202;
+    color: #ffffff;
+}
+
+/* Efeito ao passar o mouse */
+footer a.devto:hover {
+    background-color: #333333;
+}
